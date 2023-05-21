@@ -158,6 +158,9 @@ include device/samsung_slsi/sepolicy/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
+# Vibrator
+$(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
+
 ## Wi-Fi
 BOARD_WLAN_DEVICE                := slsi
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
