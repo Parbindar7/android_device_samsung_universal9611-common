@@ -164,6 +164,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 # Vibrator
 $(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
 
+## USB
+$(call soong_config_set,samsungUsbGadgetVars,gadget_name,13200000.dwc3)
+
 ## Wi-Fi
 BOARD_WLAN_DEVICE                := slsi
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
