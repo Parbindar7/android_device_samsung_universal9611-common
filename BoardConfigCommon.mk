@@ -89,15 +89,9 @@ SOONG_CONFIG_samsungCameraVars += extra_ids
 SOONG_CONFIG_samsungCameraVars_extra_ids := 4,20,23,50,52,54
 $(call soong_config_set,samsungCameraVars,usage_64bit,true)
 
-# FOD
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.universal9611
-
 # libinit
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_universal9611
 TARGET_RECOVERY_DEVICE_MODULES := libinit_universal9611
-
-# Display
-TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x400000000LL
 
 ## Graphics
 TARGET_USES_VULKAN := true
@@ -166,7 +160,6 @@ BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/samsung_slsi/sepolicy/sepolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
 # Vibrator
 $(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
