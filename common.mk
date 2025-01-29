@@ -50,15 +50,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(COMMON_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
 
-# Biometric Fingerprint
-ifeq ($(TARGET_HAS_FOD),false)
-PRODUCT_PACKAGES += \
-     android.hardware.biometrics.fingerprint-service.samsung
-
-PRODUCT_COPY_FILES += \
-     $(COMMON_PATH)/configs/keylayout/uinput-sec-fp.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-sec-fp.kl
-endif
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl:64 \
@@ -232,9 +223,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-lineage
-ifneq ($(TARGET_HAS_FOD),false)
-DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-nofod
-endif
 
 PRODUCT_ENFORCE_RRO_TARGETS += framework-res SystemUI SettingsProvider CarrierConfig
 
