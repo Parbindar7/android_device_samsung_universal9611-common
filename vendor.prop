@@ -31,9 +31,6 @@ bluetooth.profile.sap.server.enabled=true
 ## Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
-## FRP
-ro.frp.pst=/dev/block/persistent
-
 ## Graphics
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
