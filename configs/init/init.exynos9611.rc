@@ -322,7 +322,7 @@ on boot
     chmod 0644 /sys/class/input_booster/touch/level
 
 # SSWAP
-    write /proc/sys/vm/swappiness 145
+    write /proc/sys/vm/swappiness 80
 
     write /proc/sys/vm/min_free_order_shift 4
 
