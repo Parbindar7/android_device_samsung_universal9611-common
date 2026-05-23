@@ -297,10 +297,6 @@ on boot
     chmod 0664 /sys/power/cpuhp/enabled
     chmod 0664 /sys/power/cpuhp/set_online_cpu
 
-    # CPU C-state node
-    chown radio system /sys/module/cpuidle/parameters/off
-    chmod 0664 /sys/module/cpuidle/parameters/off
-
     # CPU online status
     chown system system /sys/devices/system/cpu/cpu1/online
     chown system system /sys/devices/system/cpu/cpu2/online
@@ -380,10 +376,6 @@ on boot
     write /dev/cpuset/restricted/cpus 0-3
 
     setprop vendor.powerhal.init 1
-
-    # Cstate node
-    chown radio system /sys/module/cpuidle/parameters/off
-    chmod 0664 /sys/module/cpuidle/parameters/off
 
     # Permissions for input_booster
     chown system radio /sys/class/input_booster/level
