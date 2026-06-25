@@ -69,10 +69,6 @@ PRODUCT_PACKAGES += \
 # Apeture
 TARGET_BUILD_APERTURE_CAMERA := true
 
-# ConfigStore
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # Charger
 PRODUCT_PACKAGES += \
      charger_res_images_vendor
