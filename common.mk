@@ -91,6 +91,8 @@ PRODUCT_PACKAGES += \
     android.hardware.composer.hwc3-service.slsi \
     gralloc.universal9611
 
+$(call soong_config_set_bool,libui,legacy_gralloc,true)
+
 # Doze
 PRODUCT_PACKAGES += \
     SamsungDoze
