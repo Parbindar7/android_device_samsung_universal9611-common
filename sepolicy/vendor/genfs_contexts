@@ -40,7 +40,6 @@ genfscon sysfs /devices/system/chip-id/revision                                 
 genfscon sysfs /devices/platform/11500000.mali/dma_buf_gpu_mem						       u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/11500000.mali/kprcs							       u:object_r:sysfs_gpu:s0
 genfscon sysfs /devices/platform/11500000.mali/total_gpu_mem						       u:object_r:sysfs_gpu:s0
-genfscon sysfs /devices/platform/11500000.mali/power_policy						       u:object_r:sysfs_gpu:s0
 
 # Module
 genfscon sysfs /module/scsc_bt/parameters/bluetooth_address                                                    u:object_r:sysfs_bt_writable:s0
