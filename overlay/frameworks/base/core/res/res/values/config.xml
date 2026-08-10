@@ -340,4 +340,7 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
+    <!-- Disable app launch blur -->
+    <bool name="config_enableAppLaunchBlur">false</bool>
+
 </resources>
