@@ -42,7 +42,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
     (
         'vendor/lib64/hw/android.hardware.gnss@2.1-impl.so',
-        'vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so',
     ): blob_fixup()
         .remove_needed('libhidltransport.so'),
     'vendor/lib64/libssl-tm.so': blob_fixup()

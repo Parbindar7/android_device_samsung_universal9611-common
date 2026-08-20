@@ -114,6 +114,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.gps.rc
 
+
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1-service.samsung
+
 # Graphics
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
