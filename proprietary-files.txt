@@ -124,15 +124,11 @@ vendor/etc/wifi/slsi_reg_database.bin
 
 ## GNSS
 vendor/bin/hw/gpsd
-vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
-vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
 vendor/etc/gnss/ca.pem
 vendor/etc/gnss/gps.cfg
 vendor/etc/gnss/gps.debug.cfg
 vendor/lib64/hw/android.hardware.gnss@2.1-impl.so;FIX_SONAME
-vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so;FIX_SONAME
 vendor/lib64/libwrappergps.so
-vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
 
 # SLSI NFC firmware - from M315FXXU3CVH1
 vendor/firmware/nfc/sec_s3nrn82_firmware.bin
