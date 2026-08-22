@@ -150,8 +150,8 @@ TARGET_SOC := exynos9611
 include hardware/samsung_slsi-linaro/config/BoardConfig9611.mk
 
 ## Properties
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
 
 ## Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
