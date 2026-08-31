@@ -176,6 +176,7 @@ include device/samsung_slsi/sepolicy/sepolicy.mk
 include device/lineage/sepolicy/libion/sepolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += packages/modules/ImsMedia/sepolicy/system_ext/private
 
 # Vibrator
 $(call soong_config_set_bool,samsungVibratorVars,duration_amplitude,true)
