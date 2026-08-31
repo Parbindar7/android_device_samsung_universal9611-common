@@ -106,6 +106,18 @@ $(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/af
 $(call soong_config_set,lineage_health,fast_charge_value_none,1)
 $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 
+# AOSP userspace IMS and framework bearer services
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/lineage/imsstack-carrier-config-ext
+
+$(call inherit-product, packages/modules/ImsMedia/imsmedia.mk)
+$(call soong_config_set,imsstack_namespace,use_carrier_config_ext,true)
+
+PRODUCT_PACKAGES += \
+    ImsStack \
+    Iwlan \
+    QualifiedNetworksService
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
