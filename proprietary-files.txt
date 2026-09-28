@@ -21,6 +21,11 @@ vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/vndk/libaudioroute.so:vendor/lib/libaudioroute_vendor.so;FIX_SONAME
 vendor/lib/soundfx/libaudioeffectoffload.so
 
+## Audio (SoundBooster)
+vendor/lib/lib_SoundBooster_ver1000.so
+vendor/lib64/lib_SoundBooster_ver1000.so
+vendor/etc/SoundBoosterParam.txt
+
 ## Firmware
 vendor/firmware/calliope_iva.bin
 vendor/firmware/CC_DRAM_CODE_FLASH.bin
