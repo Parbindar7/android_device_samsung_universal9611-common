@@ -39,7 +39,11 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:32 \
     audio.bluetooth.default:32 \
     audio.r_submix.default:32 \
-    audio.usb.default:32
+    audio.usb.default:32 \
+    libsamsungSoundbooster_plus \
+    SoundBoosterStage
+
+$(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/universal9611-common:lib_SoundBooster_ver1000)
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml \
