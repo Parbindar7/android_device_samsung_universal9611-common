@@ -26,6 +26,13 @@ vendor/lib/lib_SoundBooster_ver1000.so
 vendor/lib64/lib_SoundBooster_ver1000.so
 vendor/etc/SoundBoosterParam.txt
 
+## Audio (Spatializer)
+vendor/lib/soundfx/libswspatializer.so
+vendor/lib64/soundfx/libswspatializer.so
+vendor/lib64/libprofileparamstorage.so
+vendor/lib64/libsecaudiocoreutils.so
+vendor/lib64/libspatializerparamstorage.so
+
 ## Firmware
 vendor/firmware/calliope_iva.bin
 vendor/firmware/CC_DRAM_CODE_FLASH.bin
