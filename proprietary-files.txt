@@ -72,24 +72,26 @@ vendor/lib64/libsecnativefeature.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libvkmanager_vendor.so
 
-## RIL - from a14 - A145FXXS5BXA1
-vendor/bin/hw/rild|006374bbdd818b1d6ee83617ddabbf4073974e0e
-vendor/etc/init/vendor.samsung.rilchip.slsi.rc|95aa52333814b340e5064eae3a9bd5cb8a96a3ff
+## RIL - from a14 - A145FXXSEDZF3
+vendor/bin/hw/rild|99eab2da5c1478954f6aa5dd09ce510067ff939a
+vendor/etc/init/vendor.samsung.rilchip.slsi.rc|9ab6b924d2f5ae56a408a55d67c142e7082a00e0
+vendor/etc/init/vendor.samsung.rild.rc|a4cc7e6d99aa026b4dc438d73b260d4143ae26b6
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml|c3f8ea3f6228f2d572081b0c0ae29a251de4350b
-vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml|e9cdde9d05c5cce32f76bbb164437f43b3288157
-vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml|ebbe359a9b2d78cb88debe79d9183c039afb7c01
-vendor/lib64/libsecril-client.so|26efd845750d4ad91e3a5c5dd7d95d40e8ef52a8
-vendor/lib64/libSemDataProps.so|86a95ebb35d80cc1ec2bdd0f80601787f1ef88ba
-vendor/lib64/libSemTelephonyProps.so|659466f18732155cbf308c14924135f2e65a3f48
-vendor/lib64/libril_sem.so|0a685aa2e67d05f180edea84d55f4b4c56da4748
-vendor/lib64/libsec-ril.so|d11c5da2fa5619fa526a4d9a3d92c26678a4c671|cb8c5220ddaa2b6b2705dfa83d8f0740ea38106a
-vendor/lib64/libsemnativecarrierfeature.so|91a9c92f3b2094479090c269771a704c58ed30c6
-vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|669709f8ff7d3435592c518ad0ba087f42b65606
-vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|a324420e0ecab5f08c606f28eb233b68792072c7
-vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so|e44c75cf85ac8f286cce8877544e2df0403579e2
-vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|9d4b2dddfe22574fabc94231fc47d6a7ec99fcd1
-vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|23184bdd3a38b864a17cabcd771ee7347da31495
-vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|f89b327cf692da0aba6d4304592b52766b736e24
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_202404.xml|8c05490ce7c580cf6b69d0d348f0d71e20b73e75
+vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_202404.xml|44aa84244783f7f961182a07cc7d6174756ce91e
+vendor/lib/libsemnativecarrierfeature.so|516418a7b6ff5f9df6c279940a0da51cbb143365
+vendor/lib64/libVendorSemTelephonyProps.so|1eea2a9e7f09457a7f45e0018ba9fcda77fc2814
+vendor/lib64/libVendorSemDataProps.so|baf149dc44f26dd9013dcb2115c0b8f1ecc0fe5a
+vendor/lib64/libril_sem.so|fe3a91bd56aa5e9650e309c08642c2f98fc598a9
+vendor/lib64/libsec-ril.so|f8b6aa14bc87212eb7ba7b73bef720c7d72b0dca
+vendor/lib64/libsecril-client.so|8d76fdaadbfbb91afcfa89ba7cba1b625fe633c9
+vendor/lib64/libsemnativecarrierfeature.so|2f4c67c435fd08dcc09e8d15ef58b1b97be42fc4
+vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|327b343a5ebe8bc5a1f5a39f284bd892431377d8
+vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|373f9f65c566164fa68281d2d8d2047577be4af4
+vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so|04af3c734d39119cc29d9d1e41defc881309ffd6
+vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|afa834e6be800e07216d03c85c2c6dd835911b98
+vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|1e93152bbee707f686212b1ce78d90ae9bb7f322
+vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|1cc1277f81c5945d63663a353142dd813af26c9a
 
 ## EGL
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal9611.so
