@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
 # Apeture
 TARGET_BUILD_APERTURE_CAMERA := true
 
+# CarrierSettings
+PRODUCT_PACKAGES += \
+    CarrierSettingsResCommon
+
 # Charger
 PRODUCT_PACKAGES += \
      charger_res_images_vendor
