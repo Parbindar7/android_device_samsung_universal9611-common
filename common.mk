@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 # Apeture
 TARGET_BUILD_APERTURE_CAMERA := true
 
+# CarrierSettings
+PRODUCT_PACKAGES += \
+    CarrierSettingsResCommon
+
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -148,6 +152,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IMS
 $(call inherit-product, hardware/lineage/generic-ims/ims.mk)
+$(call soong_config_set_bool,imsstack_namespace,use_android16_telephony_compat,true)
 
 # init
 PRODUCT_COPY_FILES += \
