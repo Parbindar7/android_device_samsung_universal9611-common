@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
 # Apeture
 TARGET_BUILD_APERTURE_CAMERA := true
 
+# CarrierSettings
+PRODUCT_PACKAGES += \
+    CarrierSettingsResCommon
+
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
