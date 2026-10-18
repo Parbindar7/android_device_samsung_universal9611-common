@@ -154,6 +154,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, hardware/lineage/generic-ims/ims.mk)
 $(call soong_config_set_bool,imsstack_namespace,use_android16_telephony_compat,true)
 
+# ImsStack
+PRODUCT_PACKAGES += \
+    ImsStackResCommon
+
 # init
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/fstab.exynos9611:$(TARGET_COPY_OUT_RAMDISK)/fstab.exynos9611 \
