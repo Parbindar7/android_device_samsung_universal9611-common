@@ -144,6 +144,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # IMS
 $(call inherit-product, hardware/lineage/generic-ims/ims.mk)
 
+# ImsStack
+PRODUCT_PACKAGES += \
+    ImsStackResCommon
+
 # init
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/fstab.exynos9611:$(TARGET_COPY_OUT_RAMDISK)/fstab.exynos9611 \
