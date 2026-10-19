@@ -1,5 +1,4 @@
 /dev/mali0                0666   system     system
-/dev/ion                  0666   system     system
 /dev/ump                  0666   system     graphics
 /dev/exynos-mem           0660   system     graphics
 /dev/video0               0660   system     camera
@@ -37,6 +36,20 @@
 /dev/v4l-subdev20         0660   system     graphics
 /dev/v4l-subdev21         0660   system     graphics
 /dev/v4l-subdev32         0660   system     graphics
+
+# dma-heap
+/dev/dma_heap/crypto                0660   system     system
+/dev/dma_heap/crypto-uncached       0660   system     system
+/dev/dma_heap/camera                0660   system     camera
+/dev/dma_heap/camera-uncached       0660   system     camera
+
+/dev/dma_heap/vframe-secure         0660   system     drmrpc
+/dev/dma_heap/vscaler-secure        0660   system     system
+/dev/dma_heap/secure_camera-secure  0660   system     camera
+
+# dma-heap with prefix system-secure
+/dev/dma_heap/system-secure-gpu_buffer-secure     0444   system     system
+/dev/dma_heap/system-secure-vstream-secure        0444   system     drmrpc
 
 # gscalers
 /dev/video23              0660   media      graphics
@@ -142,6 +155,10 @@
 
 # For FRP
 /dev/block/by-name/persist	      0600   system          system
+
+# dmabuf
+/dev/dmabuf_container     0660   cameraserver   camera
+/dev/dmabuf_trace         0660   system         system
 
 # jpeg
 /dev/m2m1shot_jpeg	      0660   media          media
