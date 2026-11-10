@@ -83,15 +83,11 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl:64 \
-    android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1
+    android.hardware.graphics.mapper@4.0-impl \
+    android.hardware.graphics.allocator@4.0-service
 
 PRODUCT_PACKAGES += \
-    android.hardware.composer.hwc3-service.slsi \
-    gralloc.universal9611
-
-$(call soong_config_set_bool,libui,legacy_gralloc,true)
+    android.hardware.composer.hwc3-service.slsi
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -330,7 +326,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel/thermal \
     hardware/samsung \
     hardware/samsung_slsi-linaro/exynos/cpboot_v3 \
-    hardware/samsung_slsi-linaro/exynos/gralloc/gralloc3 \
     hardware/samsung_slsi/libbt \
     hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
 
