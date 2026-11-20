@@ -1,25 +1,9 @@
 # Proprietary files - from Samsung package version A515FXXU8HWK1, unless pinned
 
 ## Audio
-vendor/lib/hw/audio.primary.exynos9611.so
-vendor/lib/libalsautils_sec.so
-vendor/lib/libaudio-ril.so
-vendor/lib/libaudioproxy.so
-vendor/lib/libaudio_soundtrigger.so
-vendor/lib/libfloatingfeature.so
 vendor/lib/libprofileparamstorage.so
-vendor/lib/librecordalive.so
-vendor/lib/libsamsungDiamondVoice.so
-vendor/lib/libSamsungPostProcessConvertor.so
 vendor/lib/libsecaudiocoreutils.so
-vendor/lib/libsecaudioinfo.so
-vendor/lib/libsecnativefeature.so
 vendor/lib/libspatializerparamstorage.so
-vendor/lib/lib_SamsungRec_07010.so
-vendor/lib/lib_soundaliveresampler.so
-vendor/lib/lib_SoundAlive_SRC384_ver320.so
-vendor/lib/vndk/libaudioroute.so:vendor/lib/libaudioroute_vendor.so;FIX_SONAME
-vendor/lib/soundfx/libaudioeffectoffload.so
 
 ## Audio (SoundBooster)
 vendor/lib/lib_SoundBooster_ver1000.so
