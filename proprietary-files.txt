@@ -1,21 +1,16 @@
 # Proprietary files - from Samsung package version A515FXXU8HWK1, unless pinned
 
 ## Audio
-vendor/lib/libprofileparamstorage.so
-vendor/lib/libsecaudiocoreutils.so
-vendor/lib/libspatializerparamstorage.so
+vendor/lib64/libprofileparamstorage.so
+vendor/lib64/libsecaudiocoreutils.so
+vendor/lib64/libspatializerparamstorage.so
 
 ## Audio (SoundBooster)
-vendor/lib/lib_SoundBooster_ver1000.so
 vendor/lib64/lib_SoundBooster_ver1000.so
 vendor/etc/SoundBoosterParam.txt
 
 ## Audio (Spatializer)
-vendor/lib/soundfx/libswspatializer.so
 vendor/lib64/soundfx/libswspatializer.so
-vendor/lib64/libprofileparamstorage.so
-vendor/lib64/libsecaudiocoreutils.so
-vendor/lib64/libspatializerparamstorage.so
 
 ## Firmware
 vendor/firmware/calliope_iva.bin
@@ -50,7 +45,6 @@ vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
 vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13.bin
-vendor/lib/libsecril-client.so
 vendor/lib64/libengmode_client.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libfloatingfeature.so
@@ -63,7 +57,6 @@ vendor/etc/init/vendor.samsung.rild.rc|a4cc7e6d99aa026b4dc438d73b260d4143ae26b6
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml|c3f8ea3f6228f2d572081b0c0ae29a251de4350b
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_202404.xml|8c05490ce7c580cf6b69d0d348f0d71e20b73e75
 vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_202404.xml|44aa84244783f7f961182a07cc7d6174756ce91e
-vendor/lib/libsemnativecarrierfeature.so|516418a7b6ff5f9df6c279940a0da51cbb143365
 vendor/lib64/libVendorSemTelephonyProps.so|1eea2a9e7f09457a7f45e0018ba9fcda77fc2814
 vendor/lib64/libVendorSemDataProps.so|baf149dc44f26dd9013dcb2115c0b8f1ecc0fe5a
 vendor/lib64/libril_sem.so|fe3a91bd56aa5e9650e309c08642c2f98fc598a9
@@ -78,7 +71,6 @@ vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|1e93152bbee707f68
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|1cc1277f81c5945d63663a353142dd813af26c9a
 
 ## EGL
-vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal9611.so
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1;SYMLINK=vendor/lib64/hw/vulkan.universal9611.so
 
 ## TEE non-firmware
