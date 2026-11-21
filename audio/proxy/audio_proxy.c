@@ -912,7 +912,16 @@ static void enable_spkamp_playback(void *proxy)
             ALOGVV("proxy-%s: SPKAMP Playback PCM Device(%s) with SR(%u) PF(%d) CC(%d) is opened",
                   __func__, pcm_path, pcmconfig.rate, pcmconfig.format, pcmconfig.channels);
 
-            if (pcm_start(aproxy->spkamp_playback) == 0) {
+            unsigned int size = pcm_frames_to_bytes(aproxy->spkamp_playback, pcmconfig.period_size);
+            void *dummy = calloc(1, size);
+            int ret = -1;
+
+            if (dummy) {
+                ret = pcm_write(aproxy->spkamp_playback, dummy, size);
+                free(dummy);
+            }
+
+            if (ret == 0) {
                 ALOGI("proxy-%s: SPKAMP Playback PCM Device(%s) with SR(%u) PF(%d) CC(%d) is opened & started",
                       __func__, pcm_path, pcmconfig.rate, pcmconfig.format, pcmconfig.channels);
             } else {
