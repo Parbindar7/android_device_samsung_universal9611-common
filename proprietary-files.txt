@@ -12,6 +12,9 @@ vendor/etc/SoundBoosterParam.txt
 ## Audio (Spatializer)
 vendor/lib64/soundfx/libswspatializer.so
 
+## DAP
+vendor/lib64/soundfx/libswdap.so
+
 ## Firmware
 vendor/firmware/calliope_iva.bin
 vendor/firmware/CC_DRAM_CODE_FLASH.bin
